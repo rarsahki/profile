@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  overflow-y: hidden;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
@@ -83,18 +83,18 @@ h1{
 }
 
 #facebook{
-  height: 2rem;
-  width: 2rem;
+  height: 4vmin;
+  width: 4vmin;
 }
 
 #linkedin{
-  height: 2rem;
-  width: 2rem;
+  height: 4vmin;
+  width: 4vmin;
 }
 
 #reddit{
-  height: 2rem;
-  width: 2rem;
+  height: 4vmin;
+  width: 4vmin;
 }
 
 #footer{
@@ -108,6 +108,11 @@ h1{
   height: 7vmin;
   width: 100%;
   background-color: silver;
+}
+
+.Game{
+  width: 100vw;
+  height: 100vh;
 }
 
 @keyframes App-logo-spin {

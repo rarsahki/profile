@@ -5,8 +5,10 @@ import linkedin from './linkedin.svg';
 import reddit from './reddit.svg';
 import profile from './website.jpg';
 import './App.css';
+import Game from './Game';
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,15 +19,16 @@ function App() {
           A Dreamer on his way to become an Achiever
         </p>
       </header>
+      <div className="Game">
+        <Game/>
+      </div>
       <body className="App-body">
         <div className="Rectangle">
           <h1>
             About Me:
           </h1>
           <p className="about-me">
-            I like doing things and I am trying to do a lot of things currently. I know I shouldn't be
-            doing a lot of things at the moment, but lets try making a schedule and doing things. Today,
-            I shall make a schedule for the upcoming days and make programming my top priority.
+            I like doing things and I am trying to do a lot of things currently.
           </p>
         </div>
         <div id="footer">

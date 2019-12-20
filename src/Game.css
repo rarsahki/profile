@@ -1,0 +1,25 @@
+#Game{
+  width: 100vw;
+  height: 100vh;
+}
+#leap{
+  width: 100vw;
+  height: 10vh;
+  text-align: center;
+  font-size: 5vh;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: silver;
+}
+#leap:active{
+  background-color: silver;
+  color: white;
+}
+#canvas{
+  width: 100vw;
+  height: 100vh;
+}
+#image1{
+  width: 10px;
+  height: 10px;
+}

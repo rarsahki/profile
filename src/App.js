@@ -6,9 +6,9 @@ import reddit from './reddit.svg';
 import profile from './website.jpg';
 import './App.css';
 import Game from './Game';
+import ImageInput from './ImageInput';
 
 function App() {
-
   return (
     <div className="App">
       <header className="App-header">
@@ -30,6 +30,9 @@ function App() {
           <p className="about-me">
             I like doing things and I am trying to do a lot of things currently.
           </p>
+        </div>
+        <div>
+        <ImageInput/>
         </div>
         <div id="footer">
         <a href="https://www.facebook.com/" target="_blank">

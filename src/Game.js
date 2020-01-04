@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import facebook from './facebook.svg';
 import reddit from './reddit.svg';
 import './Game.css';
+import ImageInput from './ImageInput';
 
 class Game extends Component  {
 

@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -67,14 +67,15 @@ h1{
 
 .App-body {
   position: relative;
+  display: none;
   background-color: white;
   min-height: 100vh;
   height: 100vh;
   width: 100vw;
-  display: flex;
   flex-direction: column;
   align-items: center;
   color: rgb(0,0,0);
+  border-style: solid none none none;
 }
 
 .App-link {

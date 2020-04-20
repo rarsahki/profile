@@ -8,6 +8,8 @@ import './App.css';
 import Game from './Game';
 import ImageInput from './ImageInput';
 
+
+
 function App() {
   return (
     <div className="App">
@@ -31,17 +33,14 @@ function App() {
             I like doing things and I am trying to do a lot of things currently.
           </p>
         </div>
-        <div>
-        <ImageInput/>
-        </div>
         <div id="footer">
-        <a href="https://www.facebook.com/" target="_blank">
+        <a href="https://www.facebook.com/arkrockeytherockey" target="_blank">
           <img src={facebook} alt="facebook" id="facebook" />
         </a>
-        <a href="https://www.facebook.com/" target="_blank">
+        <a href="https://www.linkedin.com/in/ark-srivastava-252542160" target="_blank">
           <img src={linkedin} alt="linkedin" id="linkedin" />
         </a>
-        <a href="https://www.facebook.com/" target="_blank">
+        <a href="https://www.reddit.com/user/rarsahki" target="_blank">
           <img src={reddit} alt="reddit" id ="reddit" target="_blank"/>
         </a>
         </div>

@@ -30,7 +30,9 @@ function App() {
             About Me:
           </h1>
           <p className="about-me">
-            I like doing things and I am trying to do a lot of things currently.
+            I like doing things and I am trying to do a lot of things currently.<br/>
+            I am a junior year, ECE student at NIT TRICHY.<br/>
+            Hit me up on my social media handles given below, if you would like to discuss anything like anyyyythinggg. :)
           </p>
         </div>
         <div id="footer">

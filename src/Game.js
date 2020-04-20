@@ -190,7 +190,7 @@ class Game extends Component  {
         this.setState({alertcount:0});
       }
       if(this.state.obpath<=150 && this.state.obcount===4 && this.state.alertcount===1){
-        alert('Hello Sir/Madam, Don\'t Fly That Fly! Senior Year');
+        alert('Actually I haven\'t graduated yet');
         this.setState({alertcount:0});
       }
       if(this.state.obpath<=0){

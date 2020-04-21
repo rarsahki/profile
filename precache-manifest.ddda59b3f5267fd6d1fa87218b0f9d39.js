@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9e4e85a033e3e1409d677313528067a2",
+    "revision": "78ac9d7dd77d299a180561fbe26f2b6d",
     "url": "/profile/index.html"
   },
   {
-    "revision": "b6f82a7d6516107b0fc2",
+    "revision": "9ce6acdf3f82d1d9ae63",
     "url": "/profile/static/css/2.36ca827f.chunk.css"
   },
   {
-    "revision": "bcddd55f79626be8ef0b",
+    "revision": "68e6dd8dc3511572fb53",
     "url": "/profile/static/css/main.f311c326.chunk.css"
   },
   {
-    "revision": "b6f82a7d6516107b0fc2",
-    "url": "/profile/static/js/2.c1fb7d17.chunk.js"
+    "revision": "9ce6acdf3f82d1d9ae63",
+    "url": "/profile/static/js/2.392aaf6a.chunk.js"
   },
   {
     "revision": "c9393aec10a694407f55aba3839b9bf4",
-    "url": "/profile/static/js/2.c1fb7d17.chunk.js.LICENSE.txt"
+    "url": "/profile/static/js/2.392aaf6a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bcddd55f79626be8ef0b",
-    "url": "/profile/static/js/main.109dbd55.chunk.js"
+    "revision": "68e6dd8dc3511572fb53",
+    "url": "/profile/static/js/main.06d3326a.chunk.js"
   },
   {
     "revision": "330cceb0f96335bc73ea",
@@ -66,6 +66,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3c6c064c7c96be23e1824a34234fe311",
     "url": "/profile/static/media/reddit.3c6c064c.svg"
+  },
+  {
+    "revision": "2fcc2eda0497857ff925684ea720ed08",
+    "url": "/profile/static/media/rotate_mobile.2fcc2eda.png"
   },
   {
     "revision": "63faf74542220af5561843bd2180b7a0",

@@ -4,6 +4,7 @@
   background-color: #2C93F9;
   border-style: solid none none none;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #cloud{
@@ -38,16 +39,19 @@
   color: black;
 }
 #canvas{
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 #image1{
   width: 10px;
   height: 10px;
 }
  #rotate_mobile{
-   height: 40vh;
+   height: 25vh;
    width: 50vw;
    display: block;
-   margin: auto;
+   margin-left: auto;
+   margin-right: auto;
    border-radius: 50%;
    border-color: white
  }

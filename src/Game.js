@@ -212,6 +212,7 @@ class Game extends Component  {
         document.getElementsByClassName('App-body')[0].scrollIntoView({behavior: 'smooth'});
       }
       else{
+
         let cloud = document.getElementById('cloud');
         cloud.style.display = "flex";
         cloud.style.position = "absolute";
@@ -235,22 +236,34 @@ class Game extends Component  {
 
   render()  {
     return  (
-      <Orientation orientation='landscape'>
-      <div id="Game">
-      <img src={cloud} id="cloud"/>
-        <button id="leap" onClick={this.leap}>
-            Click to <i>LEAP</i>
-        </button>
-        <canvas ref="canvas" id="canvas">
-          <img src={grass} id="grass"/>
-          <img  src={naruto} id="naruto"/>
-          <img  src={ball} id="ball"/>
-          <img  src={facebook} id="facebook"/>
-          <img  src={school} id="school"/>
-          <img  src={graduation} id="graduation"/>
-        </canvas>
-      </div>
-      </Orientation>
+      // <div id="Game">
+      // <img src={cloud} id="cloud"/>
+      //   <button id="leap" onClick={this.leap}>
+      //       Click to <i>LEAP</i>
+      //   </button>
+      //   <canvas ref="canvas" id="canvas">
+      //     <img src={grass} id="grass"/>
+      //     <img  src={naruto} id="naruto"/>
+      //     <img  src={ball} id="ball"/>
+      //     <img  src={facebook} id="facebook"/>
+      //     <img  src={school} id="school"/>
+      //     <img  src={graduation} id="graduation"/>
+      //   </canvas>
+      // </div>
+      <DeviceOrientation lockOrientation={'landscape'}>
+        {/* Will only be in DOM in landscape */}
+        <Orientation orientation='landscape' alwaysRender={false}>
+          <div>
+            <p>Only visible in landscape</p>
+          </div>
+        </Orientation>
+        {/* Will stay in DOM, but is only visible in portrait */}
+        <Orientation orientation='portrait'>
+          <div>
+            <p>Please rotate your device</p>
+          </div>
+        </Orientation>
+      </DeviceOrientation>
     );
   }
 }

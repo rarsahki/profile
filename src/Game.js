@@ -9,6 +9,7 @@ import graduation from './graduation.png';
 import grass from './grass.png';
 import './Game.css';
 import ImageInput from './ImageInput';
+import DeviceOrientation, { Orientation } from 'react-screen-orientation'
 var dr;
 class Game extends Component  {
 
@@ -234,6 +235,7 @@ class Game extends Component  {
 
   render()  {
     return  (
+      <Orientation orientation='landscape'>
       <div id="Game">
       <img src={cloud} id="cloud"/>
         <button id="leap" onClick={this.leap}>
@@ -248,6 +250,7 @@ class Game extends Component  {
           <img  src={graduation} id="graduation"/>
         </canvas>
       </div>
+      </Orientation>
     );
   }
 }

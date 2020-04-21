@@ -213,7 +213,6 @@ class Game extends Component  {
         document.getElementsByClassName('App-body')[0].scrollIntoView({behavior: 'smooth'});
       }
       else{
-
         let cloud = document.getElementById('cloud');
         cloud.style.display = "flex";
         cloud.style.position = "absolute";
@@ -260,7 +259,7 @@ class Game extends Component  {
         {/* Will stay in DOM, but is only visible in portrait */}
         <Orientation orientation='portrait'>
           <div>
-            <img src={rotate_mobile} id="rotate_mobile"/>
+            <img src={rotate_mobile} id="rotate_mobile" alt="Rotate your device" style="vertical-align:middle"/>
           </div>
         </Orientation>
       </DeviceOrientation>

@@ -176,14 +176,14 @@ class Game extends Component  {
       canvas.drawImage(grass,0, (window.innerHeight) - (window.innerHeight*0.5), (window.innerWidth), (window.innerHeight*0.5));
       canvas.drawImage(naruto,0,this.state.height, (window.innerWidth*0.25), (window.innerHeight*0.5));
       if(this.state.obcount===1)
-        canvas.drawImage(ball,this.state.obpath, (window.innerHeight) - (window.innerHeight*0.2), (window.innerHeight*0.15), (window.innerHeight*0.15));
+        canvas.drawImage(ball,this.state.obpath, (window.innerHeight) - (window.innerHeight*0.2), (window.innerWidth*0.15), (window.innerHeight*0.15));
       else if(this.state.obcount===2){
-        canvas.drawImage(facebook,this.state.obpath, (window.innerHeight) - (window.innerHeight*0.2), (window.innerHeight*0.15), (window.innerHeight*0.15));
+        canvas.drawImage(facebook,this.state.obpath, (window.innerHeight) - (window.innerHeight*0.2), (window.innerWidth*0.15), (window.innerHeight*0.15));
       }
       else if(this.state.obcount===3){
-        canvas.drawImage(school,this.state.obpath, (window.innerHeight) - (window.innerHeight*0.2), (window.innerHeight*0.15), (window.innerHeight*0.15));
+        canvas.drawImage(school,this.state.obpath, (window.innerHeight) - (window.innerHeight*0.2), (window.innerWidth*0.15), (window.innerHeight*0.15));
       }else if (this.state.obcount===4){
-        canvas.drawImage(graduation,this.state.obpath, (window.innerHeight) - (window.innerHeight*0.2), (window.innerHeight*0.15), (window.innerHeight*0.15));
+        canvas.drawImage(graduation,this.state.obpath, (window.innerHeight) - (window.innerHeight*0.2), (window.innerWidth*0.15), (window.innerHeight*0.15));
       }
       if(this.state.height>= (window.innerHeight) - (window.innerHeight*0.55) && this.state.obpath<=(window.innerWidth*0.15) && this.state.obcount<=3 && this.state.alertcount===1){
         alert('Keep Going!');

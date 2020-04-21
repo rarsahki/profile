@@ -13,13 +13,12 @@
 }
 
 #leap{
-  width: 10vw;
+  width: 20vw;
   height: 20vh;
   display: block;
   margin: auto;
   border-radius: 50%;
   text-align: center;
-  font-size: 3vh;
   font-family: sans-serif;
   font-weight: bold;
   border-style: double;

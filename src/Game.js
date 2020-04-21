@@ -13,7 +13,7 @@ var dr;
 class Game extends Component  {
 
   state = {
-    height: window.innerHeight-300,
+    height: window.innerHeight - window.innerHeight*0.5,
     xjump: 5,
     direction: -1,
     speed: 0.25,
@@ -160,36 +160,36 @@ class Game extends Component  {
       this.setState({height:x});
       if(this.state.height < 0){
         this.setState({direction:1})
-      }else if (this.state.height > window.innerHeight-300){
+      }else if (this.state.height > window.innerHeight - window.innerHeight*0.5){
         this.setState({xjump:0});
         this.setState({speed:0});
         this.setState({direction:-1});
-        this.setState({height:window.innerHeight-300})
+        this.setState({height:window.innerHeight - window.innerHeight*0.5})
       }
-      if(this.state.height > window.innerHeight-300 && this.state.obcount===5){
+      if(this.state.height > window.innerHeight - window.innerHeight*0.5 && this.state.obcount===5){
         window.cancelAnimationFrame(dr);
       }
       var speed = this.state.xjump+this.state.speed;
       var obstep = this.state.obstep+this.state.obspeed;
       this.setState({obstep:obstep});
       this.setState({xjump:speed});
-      canvas.drawImage(grass,0,window.innerHeight-150,window.innerWidth,150);
-      canvas.drawImage(naruto,0,this.state.height,300,300);
+      canvas.drawImage(grass,0, (window.innerHeight) - (window.innerHeight*0.5), (window.innerWidth), (window.innerHeight*0.5));
+      canvas.drawImage(naruto,0,this.state.height, (window.innerWidth*0.25), (window.innerHeight*0.5));
       if(this.state.obcount===1)
-        canvas.drawImage(ball,this.state.obpath,window.innerHeight-150,100,100);
+        canvas.drawImage(ball,this.state.obpath, (window.innerHeight) - (window.innerHeight*0.2), (window.innerHeight*0.15), (window.innerHeight*0.15));
       else if(this.state.obcount===2){
-        canvas.drawImage(facebook,this.state.obpath,window.innerHeight-150,100,100);
+        canvas.drawImage(facebook,this.state.obpath, (window.innerHeight) - (window.innerHeight*0.2), (window.innerHeight*0.15), (window.innerHeight*0.15));
       }
       else if(this.state.obcount===3){
-        canvas.drawImage(school,this.state.obpath,window.innerHeight-150,100,100);
+        canvas.drawImage(school,this.state.obpath, (window.innerHeight) - (window.innerHeight*0.2), (window.innerHeight*0.15), (window.innerHeight*0.15));
       }else if (this.state.obcount===4){
-        canvas.drawImage(graduation,this.state.obpath,window.innerHeight-150,100,100);
+        canvas.drawImage(graduation,this.state.obpath, (window.innerHeight) - (window.innerHeight*0.2), (window.innerHeight*0.15), (window.innerHeight*0.15));
       }
-      if(this.state.height>=window.innerHeight-350 && this.state.obpath<=150 && this.state.obcount<=3 && this.state.alertcount===1){
+      if(this.state.height>= (window.innerHeight) - (window.innerHeight*0.55) && this.state.obpath<=(window.innerWidth*0.15) && this.state.obcount<=3 && this.state.alertcount===1){
         alert('Keep Going!');
         this.setState({alertcount:0});
       }
-      if(this.state.obpath<=150 && this.state.obcount===4 && this.state.alertcount===1){
+      if(this.state.obpath<=(window.innerWidth*0.15) && this.state.obcount===4 && this.state.alertcount===1){
         alert('Actually I haven\'t graduated yet');
         this.setState({alertcount:0});
       }
@@ -221,7 +221,7 @@ class Game extends Component  {
         let button = document.getElementById('leap');
         button.style.position = "absolute";
         button.style.top = "130vh";
-        button.style.left = "45vw";
+        button.style.left = "40vw";
         button.textAlign = "center";
         this.setState({xjump:1});
         this.setState({speed:0.1});

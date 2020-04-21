@@ -46,6 +46,8 @@
  #rotate_mobile{
    height: 40vh;
    width: 50vw;
+   display: block;
+   margin: auto;
    border-radius: 50%;
    border-color: white
  }

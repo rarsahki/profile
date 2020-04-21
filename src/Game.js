@@ -259,7 +259,7 @@ class Game extends Component  {
         {/* Will stay in DOM, but is only visible in portrait */}
         <Orientation orientation='portrait'>
           <div>
-            <img src={rotate_mobile} id="rotate_mobile" alt="Rotate your device" style="vertical-align:middle"/>
+            <img src={rotate_mobile} id="rotate_mobile" alt="Rotate your device"/>
           </div>
         </Orientation>
       </DeviceOrientation>

@@ -1,7 +1,9 @@
 #!/bin/bash
 
 git add .
-git commit
+echo Please enter your commit message
+read var
+git commit -m "$var"
 git push origin master
 npm run deploy
 

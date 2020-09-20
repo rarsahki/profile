@@ -30,7 +30,7 @@ function App() {
             About Me:
           </h1>
           <p className="about-me">
-            I like doing things and being busy, also I would love to work at Citi.<br/>
+            I like doing things and being busy.<br/>
             I am a senior year, ECE student at NIT TRICHY.<br/>
             Hit me up on my social media handles given below, if you would like to discuss anything like anyyyythinggg. :)
           </p>
